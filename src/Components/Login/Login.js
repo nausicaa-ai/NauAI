@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
-import './Login.css';
+import React, { useState } from "react";
+import "./Login.css";
+import { Link } from "react-router-dom";
+import Home from "../Home/Home.js";
 
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -16,7 +18,7 @@ function Login() {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Perform login logic here, e.g. send email and password to server
-    console.log('Logged in with email:', email, 'and password:', password);
+    console.log("Logged in with email:", email, "and password:", password);
   };
 
   return (
@@ -46,9 +48,11 @@ function Login() {
           />
         </div>
         <div>
-          <button className="login-submit" type="submit">
-            Log in
-          </button>
+          <Link to="/">
+            <button className="login-submit" type="submit">
+              Log in
+            </button>
+          </Link>
         </div>
       </form>
     </div>

@@ -1,0 +1,14 @@
+
+.sidenav > li {
+    margin: 10px 20px;
+    position:relative;
+    top: 300px;
+  }
+
+  .brand-logo{
+    left: 50px;
+  }
+
+  .wrapper {
+    padding-left: 300px;
+  }
