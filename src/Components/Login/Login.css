@@ -19,9 +19,9 @@
     flex-direction: column;
     align-items: center;
     padding: 24px;
-    margin-bottom: 24px;
     width: 380px;
     max-width: 100%;
+    margin-bottom: 10px;
   }
 
   .login-input {
@@ -53,6 +53,61 @@
     max-width: 100%;
   }
 
+  .login-submit-google{
+    background-color: rgb(255, 255, 255);
+    color: rgba(80, 77, 77, 0.171);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: 1px solid rgba(80, 77, 77, 0.171);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 300px;
+    max-width: 100%;
+  }
+  .login-submit-google:hover {
+    background-color: #333;
+    color: white;
+  }
+
   .login-submit:hover {
     background-color: #333;
   }
+
+  .left-line {
+    border-style: solid;
+    align-items: center;
+    width: 400px;
+
+    /* max-width: fit-content; */
+  }
+
+  .line-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+    border: none;
+  }
+
+  .text {
+    padding: 0 10px;
+    background-color: #fff;
+  }
+
+  .google {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 20px;
+  }
+
