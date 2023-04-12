@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
-import Home from "../Home/Home.js";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -48,6 +47,10 @@ function Login() {
           />
         </div>
         <div>
+          // note - In the future we may have to change the Link tag to work asynchronously with actually
+          logging a user in.  Or we can implement the login submit to redirect a user to the home page upon
+          successful login/authentication. ChatGPT can help.
+          https://reactrouter.com/en/main/components/link read this for clarification
           <Link to="/">
             <button className="login-submit" type="submit">
               Log in
