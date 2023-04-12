@@ -1,0 +1,15 @@
+a {
+  color: white;
+}
+
+.create-btn {
+  position: relative;
+  top: 20px;
+}
+
+span.badge{
+  color: black;
+  border: none;
+  border-radius: 2px;
+  padding: 0 16px;
+}

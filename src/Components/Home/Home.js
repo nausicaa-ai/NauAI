@@ -1,5 +1,5 @@
 import 'materialize-css/dist/css/materialize.min.css';
-// import './Home.css'
+import './Home.css'
 import {Link} from 'react-router-dom'
 
 
@@ -24,33 +24,33 @@ function Home() {
             <td>Product Manager</td>
             <td>5</td>
             <td>4/25</td>
-            <td>Open</td>
-            <td><a class="waves-effect waves-light btn black">View</a></td>
+            <td><span className="badge blue">Open</span></td>
+            <td><a className="waves-effect waves-light btn black">View</a></td>
           </tr>
           <tr>
             <td>Software Engineer</td>
             <td>3</td>
             <td>0/2</td>
-            <td>Intake</td>
-            <td><a class="waves-effect waves-light btn black">View</a></td>
+            <td><span className="badge yellow">Intake</span></td>
+            <td><a className="waves-effect waves-light btn black">View</a></td>
           </tr>
           <tr>
             <td>Designer</td>
             <td>3</td>
             <td>4/15</td>
-            <td>Scoring</td>
+            <td><span className="badge red">Scoring</span></td>
             <td><a className="waves-effect waves-light btn black">View</a></td>
           </tr>
           <tr>
             <td>Customer Service Manager</td>
             <td>3</td>
             <td>5/5</td>
-            <td>Complete</td>
-            <td><a class="waves-effect waves-light btn black">View</a></td>
+            <td><span className="badge green">Complete</span></td>
+            <td><a className="waves-effect waves-light btn black">View</a></td>
           </tr>
         </tbody>
       </table>
-      <div className="create-btn">
+      <div className="create-btn waves-effect waves-light btn black">
         <Link to="/createjob" >Create</Link>
       </div>
     </div>

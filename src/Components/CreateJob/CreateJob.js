@@ -56,9 +56,9 @@ function CreateJob() {
         <div className="buttons">
           <div className="row">
             <div className="col s6">
-              <div className="create-btn">
+              <div className="waves-effect waves-light btn black">
                 <Link to="/" >
-                  <button className="waves-effect waves-light btn black"></button>
+                  Create
                 </Link>
               </div>
             </div>

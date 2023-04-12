@@ -21,7 +21,7 @@ function Nav() {
       <div className="sideNav">
         <ul
           id="slide-out"
-          className="sidenav sidenav-fixed light-blue darken-1"
+          className="sidenav sidenav-fixed light-blue darken-1 z-depth-3"
         >
           <li>
             <Link to="/" className="white-text">
@@ -35,9 +35,9 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link to="/createjob" className="white-text">
-              <i className="material-icons white-text">format_align_justify</i>
-              Create Job
+            <Link to="/login" className="white-text">
+              <i className="material-icons white-text">fingerprint</i>
+              Login
             </Link>
           </li>
         </ul>
