@@ -14,6 +14,7 @@ function TemplatesDashBoard() {
   return (
     <>
       <div className="container">
+      <h3>Template</h3>
         <div className="row">
           <div className="col s12">
             <ul className="tabs">
@@ -23,8 +24,6 @@ function TemplatesDashBoard() {
           </div>
           <div id="test1" className="col s12">
             <Templates />
-
-
           </div>
           <div id="test2" className="col s12">
             <SkillPool />

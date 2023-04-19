@@ -23,16 +23,4 @@ color: black;
 }
 
 
-.select-wrapper input.select-dropdown:focus {
-border-color: #039be5;
-}
 
-[type="checkbox"]:checked+span:not(.lever):before{
-border-right: 2px solid #039be5;
-border-bottom: 2px solid #039be5;
-}
-
-.input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
-border-bottom: 1px solid #039be5 !important;
-box-shadow: 0 1px 0 0 #039be5 !important;
-}

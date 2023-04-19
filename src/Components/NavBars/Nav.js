@@ -1,6 +1,5 @@
 import './Nav.css'
 import { Link, Outlet } from "react-router-dom";
-import Home from "../Home/Home.js";
 
 function Nav() {
   return (
@@ -38,6 +37,12 @@ function Nav() {
             <Link to="/login" className="white-text">
               <i className="material-icons white-text">fingerprint</i>
               Login
+            </Link>
+          </li>
+          <li>
+            <Link to="/job" className="white-text">
+              <i className="material-icons white-text">grid_on</i>
+              Job Dashboard
             </Link>
           </li>
         </ul>
