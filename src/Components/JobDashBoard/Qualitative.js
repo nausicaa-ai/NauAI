@@ -4,8 +4,9 @@ import './Qualitative.css'
 function Qualitative() {
   const [question, setQuestion] = useState("")
   const [questions, setQuestions] = useState([])
+  const [editIndex, setEditIndex] = useState()
 
-   const addQuestion = () => {
+  const addQuestion = () => {
     if (question.trim() !== "") {
       setQuestions([...questions, question])
       setQuestion("")
@@ -35,26 +36,54 @@ function Qualitative() {
           </div>
         </div>
         <div className="section"></div>
-        <div className="section">
-          <table>
-            <thead>
-              <tr>
-                <th>Questions</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {questions.map((question, index) => (
-                <tr key={index}>
-                  <td>{question}</td>
-                  <td>
-                    <div className="btn waves-effect waves-light btn black" onClick={() => deleteQuestion(index)}>Delete</div>
-                  </td>
+        {questions.length > 0 && (
+          <div className="section">
+            <table>
+              <thead>
+                <tr>
+                  <th>Questions</th>
+                  <th>Actions</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {questions.map((question, index) => (
+                  <tr key={index}>
+                    <td>
+                      {index === editIndex ? (
+                        <input
+                          type="text"
+                          value={question}
+                          onChange={(event) => {
+                            const newQuestions = [...questions]
+                            newQuestions[index] = event.target.value
+                            setQuestions(newQuestions)
+                          }}
+                          onBlur={() => setEditIndex(null)}
+                        />
+                      ) : (
+                        question
+                      )}
+                    </td>
+                    <td>
+                      {index === editIndex ? (
+                        <div className="btn waves-effect waves-light btn black" onClick={addQuestion}>Save</div>
+                      ) : (
+                        <>
+                          <div className="col s3">
+                            <div className="btn waves-effect waves-light btn black" onClick={() => deleteQuestion(index)}>Delete</div>
+                          </div>
+                          <div className="col s3">
+                            <div className="btn waves-effect waves-light btn black" onClick={() => setEditIndex(index)}>Edit</div>
+                          </div>
+                        </>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
     </>
   )
