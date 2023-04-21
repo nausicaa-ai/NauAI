@@ -16,10 +16,10 @@ function App() {
       <header>
         <Router>
           <Routes>
-            <Route path="/login" element={<Login />} />
+            <Route index element={<Login />} />
 
             <Route path="/" element={<Nav />}>
-              <Route index element={<Home />} />
+              <Route path="/home" element={<Home />} />
               <Route path='/createjob' element={<CreateJob />} />
               <Route path='/templates' element={<TemplateDashBoard/>} />
               <Route path='/job' element={<JobDashBoard />} />

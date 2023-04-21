@@ -4,9 +4,9 @@ import { Link, Outlet } from "react-router-dom";
 function Nav() {
   return (
     <>
-      <nav className="light-blue darken-3">
+      <nav className="header-nav light-blue darken-3">
         <div className="nav-wrapper">
-          <a href="#" className="brand-logo">Nausicaa Ai</a>
+          <a href="/home" className="brand-logo">Nausicaa Ai</a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
               <a href="sass.html">
@@ -23,7 +23,7 @@ function Nav() {
           className="sidenav sidenav-fixed light-blue darken-1 z-depth-3"
         >
           <li>
-            <Link to="/" className="white-text">
+            <Link to="/home" className="white-text">
               <i className="material-icons white-text">home</i>Home
             </Link>
           </li>
@@ -34,7 +34,7 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link to="/login" className="white-text">
+            <Link to="/" className="white-text">
               <i className="material-icons white-text">fingerprint</i>
               Login
             </Link>

@@ -52,10 +52,8 @@ function Login() {
           logging a user in.  Or we can implement the login submit to redirect a user to the home page upon
           successful login/authentication. ChatGPT can help.
           https://reactrouter.com/en/main/components/link read this for clarification */}
-            <Link to="/">
-              <button className="login-submit" type="submit">
-                Log in
-              </button>
+            <Link className="btn login-submit" to="/home">
+              Log in
             </Link>
           </div>
         </form>

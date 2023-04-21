@@ -1,14 +1,27 @@
-
+.header-nav {
+  padding-left: 300px;
+}
 .sidenav > li {
-    margin: 10px 20px;
-    position:relative;
-    top: 300px;
-  }
+  margin: 10px 20px;
+  position:relative;
+  top: 300px;
+}
 
-  .brand-logo{
-    left: 50px;
-  }
+.brand-logo{
+  left: 50px;
+}
 
-  .wrapper {
-    padding-left: 300px;
-  }
+
+
+
+
+
+/* header, main, footer {
+padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+header, main, footer {
+padding-left: 0;
+}
+} */
