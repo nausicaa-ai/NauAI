@@ -24,6 +24,9 @@ function LineChart() {
       legend: {
         position: 'top',
       },
+      datalabels: {
+        display: false
+      },
     },
     scales: {
       y: {

@@ -27,6 +27,9 @@ function RadarChart() {
       legend: {
         position: 'top',
       },
+      datalabels: {
+        display: false
+      },
     },
     // important to set min and max
     scales: {

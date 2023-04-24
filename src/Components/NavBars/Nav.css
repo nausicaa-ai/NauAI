@@ -1,6 +1,4 @@
-.header-nav {
-  padding-left: 300px;
-}
+
 .sidenav > li {
   margin: 10px 20px;
   position:relative;
@@ -10,11 +8,6 @@
 .brand-logo{
   left: 50px;
 }
-
-
-
-
-
 
 /* header, main, footer {
 padding-left: 300px;

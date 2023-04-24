@@ -12,6 +12,18 @@ code {
     monospace;
 }
 
-.container{
+/* .container{
   padding-left: 15vw;
+  max-width: 1600px !important;
+  width: 90% !important;
+
+} */
+header, main, footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
 }
