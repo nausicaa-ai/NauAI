@@ -1,5 +1,5 @@
 import { Radar } from 'react-chartjs-2';
-// import './Chart.css'
+
 
 import {
   Chart as ChartJS,
@@ -22,7 +22,7 @@ ChartJS.register(
 
 function RadarChart() {
   const options = {
-    responsive: true,
+    responsive: "t",
     plugins: {
       legend: {
         position: 'top',
