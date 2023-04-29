@@ -14,7 +14,7 @@ function Candidates() {
           <button className="btn black">Request Self-assessment</button>
         </div>
         <div className="col s3">
-          <button className="btn black">Request references</button>
+
         </div>
         <div className="col s4">
           <button className="btn black">Request references assessment</button>
