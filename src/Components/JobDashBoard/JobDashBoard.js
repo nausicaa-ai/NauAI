@@ -3,6 +3,7 @@ import M from 'materialize-css';
 import Qualitative from '../JobDashBoard/Qualitative'
 import Candidates from '../JobDashBoard/Candidates'
 import TargetModel from '../JobDashBoard/TargetModel'
+import Settings from './Settings';
 
 function JobDashBoard() {
   useEffect(() => {
@@ -34,7 +35,7 @@ function JobDashBoard() {
             <Candidates />
           </div>
           <div id="settings" className="col s12">
-
+            <Settings />
           </div>
         </div>
       </div>
