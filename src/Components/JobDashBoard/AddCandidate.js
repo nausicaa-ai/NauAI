@@ -15,7 +15,7 @@ function AddCanidate() {
       <div className="section"></div>
       <div className="section"></div>
       <div className="container">
-        <h2>Add Canidate</h2>
+        <h2>Add Candidate</h2>
         <div className="row">
           <form className="col s12">
             <div className="row">

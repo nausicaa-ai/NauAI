@@ -23,7 +23,7 @@ function Candidates() {
           <button className='dropdown-trigger btn' data-target='dropdown1'>Actions</button>
 
           <ul id='dropdown1' className='dropdown-content'>
-            <li><a href="addcanidate">Add Canidate</a></li>
+            <li><a href="addcanidate">Add Candidate</a></li>
             <li class="divider" tabindex="-1"></li>
             <li><a href="#">Placeholder</a></li>
             <li class="divider" tabindex="-1"></li>

@@ -6,7 +6,7 @@ import Nav from "./Components/NavBars/Nav.js";
 import CreateJob from './Components/CreateJob/CreateJob.js';
 import TemplateDashBoard from './Components/Templates/TemplateDashBoard.js';
 import JobDashBoard from './Components/JobDashBoard/JobDashBoard'
-import AddCanidate from './Components/JobDashBoard/AddCanidate'
+import AddCandidate from './Components/JobDashBoard/AddCandidate'
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "materialize-css/dist/css/materialize.min.css";
@@ -24,7 +24,7 @@ function App() {
               <Route path='/createjob' element={<CreateJob />} />
               <Route path='/templates' element={<TemplateDashBoard/>} />
               <Route path='/job' element={<JobDashBoard />} />
-              <Route path='/addcanidate' element={<AddCanidate />} />
+              <Route path='/addcanidate' element={<AddCandidate />} />
             </Route>
 
           </Routes>
