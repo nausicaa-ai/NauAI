@@ -56,6 +56,7 @@ function Templates() {
           <label>Skills</label>
         </div>
       ))}
+      <button className="btn black" >Submit</button>
     </>
   );
 }

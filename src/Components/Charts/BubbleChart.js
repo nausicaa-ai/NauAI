@@ -105,6 +105,7 @@ const BubbleChart = () => {
                       <td>{dataset.label}</td>
                       <td className="center">{dataset.data[0].x}</td>
                       <td className="center">{dataset.data[0].y}</td>
+                      <td><a className="waves-effect waves-light btn black">View</a></td>
                     </tr>
                   ))}
                 </tbody>
