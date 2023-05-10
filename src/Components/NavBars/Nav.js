@@ -45,6 +45,18 @@ function Nav() {
               Job Dashboard
             </Link>
           </li>
+          <li>
+            <Link to="/candidate" className="white-text">
+              <i className="material-icons white-text">grid_on</i>
+              Candidate
+            </Link>
+          </li>
+          <li>
+            <Link to="/scorecard" className="white-text">
+              <i className="material-icons white-text">grid_on</i>
+              ScoreCard
+            </Link>
+          </li>
         </ul>
       </div>
       <Outlet />

@@ -21,7 +21,6 @@ function Candidates() {
       <div className="conatiner">
         <div className="col s2">
           <button className='dropdown-trigger btn' data-target='dropdown1'>Actions</button>
-
           <ul id='dropdown1' className='dropdown-content'>
             <li><a href="addcanidate">Add Candidate</a></li>
             <li class="divider" tabindex="-1"></li>
