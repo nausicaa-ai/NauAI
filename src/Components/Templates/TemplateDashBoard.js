@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import M from 'materialize-css';
 import SkillPool from './SkillPool'
+import CreateTemplates from './CreateTemplates'
 import Templates from './Templates'
 // import './TemplateDashBoard.css'
 
@@ -14,7 +15,7 @@ function TemplatesDashBoard() {
   return (
     <>
       <div className="container">
-      <h3>Template</h3>
+      <h3>Templates</h3>
         <div className="row">
           <div className="col s12">
             <ul className="tabs">

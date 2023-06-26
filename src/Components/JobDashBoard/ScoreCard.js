@@ -1,33 +1,32 @@
-import React, { useEffect, useRef } from 'react';
-import noUiSlider from 'nouislider';
-import wNumb from 'wnumb';
+import Slider from "../Sliders/SingleSlider";
+import "nouislider/dist/nouislider.css";
+import {useState} from "react"
 
-const Slider = () => {
-  const sliderRef = useRef(null);
+const ScoreCard = () => {
+  const [score1, setScore1] = useState("")
+  const [score2, setScore2] = useState("")
+  const [score3, setScore3] = useState("")
+  const [score4, setScore4] = useState("")
+  const [score5, setScore5] = useState("")
 
-  useEffect(() => {
-    if (sliderRef.current) {
-      const slider = noUiSlider.create(sliderRef.current, {
-        start: [20, 80],
-        connect: true,
-        step: 1,
-        orientation: 'horizontal', // 'horizontal' or 'vertical'
-        range: {
-          min: 0,
-          max: 100
-        },
-        format: wNumb({
-          decimals: 0
-        })
-      });
 
-      slider.on('change', (values, handle) => {
-        console.log(`Slider value changed: ${values[handle]}`);
-      });
-    }
-  }, []);
 
-  return <div ref={sliderRef} />;
+  return (
+    <div>
+      <Slider onScoreChange={(value) => {setScore1(value)}}/>
+
+      <Slider onScoreChange={(value) => {setScore2(value)}}/>
+
+      <Slider onScoreChange={(value) => {setScore3(value)}}/>
+      <Slider onScoreChange={(value) => {setScore4(value)}} />
+      <Slider onScoreChange={(value) => {setScore5(value)}}/>
+      <p>Selected Score1: {score1}</p>
+      <p>Selected Score2: {score2}</p>
+      <p>Selected Score3: {score3}</p>
+      <p>Selected Score4: {score4}</p>
+      <p>Selected Score5: {score5}</p>
+    </div>
+  );
 };
 
-export default Slider;
+export default ScoreCard;

@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home.js";
 import Nav from "./Components/NavBars/Nav.js";
 import CreateJob from './Components/CreateJob/CreateJob.js';
 import TemplateDashBoard from './Components/Templates/TemplateDashBoard.js';
+import CreateTemplates from './Components/Templates/CreateTemplates';
 import JobDashBoard from './Components/JobDashBoard/JobDashBoard'
 import AddCandidate from './Components/JobDashBoard/AddCandidate'
 import Candidate from './Components/JobDashBoard/Candidate'
@@ -27,6 +28,7 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path='/createjob' element={<CreateJob />} />
               <Route path='/templates' element={<TemplateDashBoard/>} />
+              <Route path='/createtemplate' element={<CreateTemplates />} />
               <Route path='/job' element={<JobDashBoard />} />
               <Route path='/addcanidate' element={<AddCandidate />} />
               <Route path='/candidate' element={<Candidate />} />
