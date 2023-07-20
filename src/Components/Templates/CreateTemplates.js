@@ -45,7 +45,7 @@ function CreateTemplates() {
         </div>
       </div>
       <h4>Skills</h4>
-      {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => (
+      {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
         <div className="input-field col s12" key={index}>
           <select value={selectedSkills[index] || ""} onChange={(event) => handleSkillChange(event, index)}>
             <option value="" disabled>Choose your option</option>
